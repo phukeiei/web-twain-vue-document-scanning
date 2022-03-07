@@ -36,3 +36,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Blog
+[How to Make a Component-based Document Scanning App](https://www.dynamsoft.com/codepool/vue-document-scanning-app.html)
