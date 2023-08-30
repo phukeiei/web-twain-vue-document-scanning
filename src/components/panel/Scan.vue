@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'scan-panel',
+  name: 'scan-panel1',
   props: [''],
   data() {
     return {
