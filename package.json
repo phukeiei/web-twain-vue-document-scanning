@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "ncp node_modules/dwt/dist public/resources/dwt && vue-cli-service serve",
-    "build": "vue-cli-service build && ncp node_modules/dwt/dist public/resources/dwt",
+    "serve": "ncp node_modules/dwt/dist public/dwt-resources && vue-cli-service serve",
+    "build": "vue-cli-service build&& ncp node_modules/dwt/dist build/dwt-resources",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@mdi/font": "^3.6.95",
     "core-js": "^3.6.5",
-    "dwt": "^16.1.2",
+    "dwt": "^18.3.0",
     "ncp": "^2.0.0",
     "roboto-fontface": "*",
     "vue": "^2.6.11",

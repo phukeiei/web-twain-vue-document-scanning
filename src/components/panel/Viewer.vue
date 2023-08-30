@@ -1,5 +1,5 @@
 <template>
-  <div id="viewer-container" :style="{ width:width, height: height }">
+  <div id="viewer-container" :style="{ width: width, height: height }">
     <div :id="id" style="height: inherit;"></div>
     <div id="edit-button-group">
       <v-btn outlined tile color="grey darken-1" small @click="rotate(-1)">Rotate Left</v-btn>
@@ -13,9 +13,9 @@
 
 <script>
 export default {
-  name:'dwt-viewer',
+  name: 'dwt-viewer',
   props: ['id', 'width', 'height', 'dwtRef'],
-  data () {
+  data() {
     return {
       dwtObj: null,
       viewerObj: null,  // reference of viewer instance
@@ -23,7 +23,7 @@ export default {
     }
   },
   methods: {
-    mountViewer (dwtObj) {
+    mountViewer(dwtObj) {
       if (!dwtObj) {
         alert('WebTwain Object has not been initialized yet.')
       } else {
@@ -43,7 +43,7 @@ export default {
         }
       }
     },
-    rotate (direction) {
+    rotate(direction) {
       switch (direction) {
         case -1:
         case '-1': {
@@ -57,10 +57,10 @@ export default {
         }
       }
     },
-    flip: function() {
+    flip: function () {
       this.dwtObj.Flip(this.currIdx);
     },
-    mirror: function() {
+    mirror: function () {
       this.dwtObj.Mirror(this.currIdx);
     },
     openEditor: function () {
@@ -79,13 +79,15 @@ export default {
   /* width: 100%;
   height: inherit; */
 }
+
 #edit-button-group {
   display: inline-block;
 }
+
 .inherit-width {
   width: inherit;
 }
+
 .inherit-height {
   height: inherit;
-}
-</style>
+}</style>
